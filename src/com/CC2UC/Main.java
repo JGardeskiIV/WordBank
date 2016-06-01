@@ -4,10 +4,6 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.apache.poi.openxml4j.opc.OPCPackage;
 import org.apache.poi.xssf.eventusermodel.XSSFReader;
-import org.apache.poi.xssf.model.SharedStringsTable;
-import org.xml.sax.SAXException;
-import org.xml.sax.XMLReader;
-import org.xml.sax.helpers.XMLReaderFactory;
 
 import java.io.IOException;
 
@@ -24,7 +20,7 @@ public class Main {
             XSSFReader reader = new XSSFReader( pkg );
             System.out.println("XSSFReader Established.");
 
-            
+
         } catch (InvalidFormatException e) {
             System.out.println("Failed to Open.");
         } catch (OpenXML4JException e2) {

@@ -37,10 +37,10 @@ public class WordData {
      *  @param theDefinition        -   the word's definition corresponding to the part of speech
      */
     public WordData(String theWord, String thePartOfSpeech, String theExampleSentence, String theDefinition) {
-        word = theWord;
-        partOfSpeech = thePartOfSpeech;
-        exampleSentence = theExampleSentence;
-        definition = theDefinition;
+        setWord(theWord);
+        setPartOfSpeech(thePartOfSpeech);
+        setExampleSentence(theExampleSentence);
+        setDefinition(theDefinition);
     }
 
     /***********************
